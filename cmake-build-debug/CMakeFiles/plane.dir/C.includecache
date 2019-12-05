@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/chenlongbiao/Documents/c/plane/ansi.h
+stdio.h
+-
+
+/Users/chenlongbiao/Documents/c/plane/main.c
+ansi.h
+/Users/chenlongbiao/Documents/c/plane/ansi.h
+util.h
+/Users/chenlongbiao/Documents/c/plane/util.h
+model.h
+/Users/chenlongbiao/Documents/c/plane/model.h
+
+/Users/chenlongbiao/Documents/c/plane/model.h
+
+/Users/chenlongbiao/Documents/c/plane/util.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
