@@ -14,5 +14,5 @@ char getch();
 //判断键盘是否输入
 int _kbhit();
 //打印内容到星号区
-void printText(int x,int y,char ch[]);
+void printText(int x,int y,int  ch);
 #endif //PLANE_UTIL_H

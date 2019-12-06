@@ -442,7 +442,7 @@ void checkCollision(struct Bullet arr[],int num,struct Monster arr1[], int num1)
                 arr[i].flag = 1; //将子弹移除界面
                 arr1[j].flag = 1; //将怪物移除界面
                 score++;
-                printText(starStart+19,6,score);
+                printText(starStart+12,4,score);
             }
         }
     }
@@ -468,11 +468,11 @@ void checkGameOver(struct Plane plane,struct Monster arr[], int num){
 }
 
 
-void printText(int x,int y,char ch[]){
+void printText(int x,int y,int ch){
     if (x == 0)
         x = starStart+19;
     if (y == 0)
         y = 3;
     MOVETO(x,y);
-    printf("%s",ch);
+    printf("%d",ch);
 }
